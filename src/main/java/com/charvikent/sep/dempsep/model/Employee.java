@@ -18,7 +18,26 @@ public class Employee {
 	private String LastName;
 	
 	private String age;
+	
+	private String userName;
+	
+	private String password;
+	
+	public Employee()
+	{
+		
+	}
 
+	public Employee(Employee user) {
+		this.id = user.id;
+		this.firstName = user.firstName;
+		this.LastName = user.LastName;
+		this.age = user.age;
+		this.userName = user.userName;
+		this.password =user.password;
+	}
+
+	
 	public Long getId() {
 		return id;
 	}
@@ -52,6 +71,28 @@ public class Employee {
 	public void setAge(String age) {
 		this.age = age;
 	}
+	
+	
+	
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	
+	public String getPassword() {
+		return password;
+	}
+
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 
 	@Override
 	public String toString() {

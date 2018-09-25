@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+   "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+   "jndi:/localhost/myapp/WEB-INF/dtd/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+<!--        <put-attribute name="body" value="/WEB-INF/jsp/login1.jsp" /> -->
+        <put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="summary" extends="base.definition">
+		<!-- <put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/summary.jsp" />
+	</definition>
+	<definition name="myView" extends="base.definition">
+		<!-- <put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/myView.jsp" />
+	</definition>
+	
+	<definition name="user" extends="base.definition">
+		<!-- <put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/user.jsp" />
+	</definition>
+	
+	<definition name="editUser" extends="base.definition">
+		<!-- <put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/editUser.jsp" />
+	</definition>
+	
+	
+	
+	
+	<definition name="viewUsers" extends="base.definition">
+<!-- 		<put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/viewUsers.jsp" />
+	</definition>
+	<definition name="createUser" extends="base.definition">
+<!-- 		<put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/createUser.jsp" />
+	</definition>
+	<definition name="viewReportIssues" extends="base.definition">
+<!-- 		<put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/viewReportIssues.jsp" />
+	</definition>
+	
+	<definition name="createTicketIssues" extends="base.definition">
+<!-- 		<put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/createTicketIssues.jsp" />
+	</definition>
+	
+	<definition name="updateIssue" extends="base.definition">
+<!-- 		<put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/updateIssue.jsp" />
+	</definition>
+	
+	<definition name="ViewTicket" extends="base.definition">
+<!-- 		<put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/ViewTicket.jsp" />
+	</definition>
+	
+	<definition name="editTicket" extends="base.definition">
+<!-- 		<put-attribute name="title" value="" /> -->
+		<put-attribute name="body" value="/WEB-INF/jsp/editTicket.jsp" />
+	</definition>
+	
+	<definition name="dept" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/dept.jsp" />
+	</definition>
+	<definition name="desig" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/desig.jsp" />
+	</definition>
+	<definition name="kporg" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/kporg.jsp" />
+	</definition>
+	<definition name="orgDept" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/orgDept.jsp" />
+	</definition>
+	<definition name="task" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/task.jsp" />
+	</definition>
+	<definition name="cate" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/cate.jsp" />
+	</definition>
+	
+	<definition name="dashBoard" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/dashBoard.jsp" />
+	</definition>
+	<definition name="changePassword" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/changePassword.jsp" />
+	</definition>
+
+     <definition name="employee" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/employee.jsp" />
+	</definition>
+	
+	<definition name="editProfile" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/editProfile.jsp" />
+	</definition>
+	
+	<definition name="403" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/403.jsp" />
+	</definition>
+	
+	<definition name="category" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/kpcate.jsp" />
+	</definition>
+	
+	<definition name="product" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/kpproduct.jsp" />
+	</definition>
+	
+	<definition name="orgemployee" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/orgemployee.jsp" />
+	</definition>
+	
+	<definition name="taskReports" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/taskReports.jsp" />
+	</definition>
+	
+	<definition name="taskfilter" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/tasksfilter.jsp" />
+	</definition>
+	
+	
+		
+
+</tiles-definitions>
