@@ -93,11 +93,12 @@ public class Employee {
 		this.password = password;
 	}
 
-
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", LastName=" + LastName + ", age=" + age + "]";
+		return "Employee [id=" + id + ", firstName=" + firstName + ", LastName=" + LastName + ", age=" + age
+				+ ", userName=" + userName + ", password=" + password + "]";
 	}
+
 
 	
 	

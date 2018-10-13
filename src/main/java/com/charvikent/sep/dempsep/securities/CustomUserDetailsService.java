@@ -2,6 +2,7 @@ package com.charvikent.sep.dempsep.securities;
 
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,11 @@ public class CustomUserDetailsService implements UserDetailsService{
 		throw new UsernameNotFoundException("No user present with username: "+username);
 		}else{
 			List<String> userRoles=userRolesRepository.findRoleByUserName(username);
-			return new CustomUserDetails(user,userRoles);
+			
+			List<String> list =new ArrayList<>();
+			list.add("ROLE_ADMIN");
+			
+			return new CustomUserDetails(user,list);
 		}
 		
 	}

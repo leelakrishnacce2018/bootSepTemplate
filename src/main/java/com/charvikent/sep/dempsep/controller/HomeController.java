@@ -8,6 +8,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,6 +33,7 @@ public class HomeController {
 	
 	
 	@PostMapping("/employees")
+	@Secured("ROLE_ADMIN")
 	public Employee saveEmploye()
 	{
 		Employee emp =new Employee();
@@ -42,7 +44,7 @@ public class HomeController {
 		return employeeService.saveEmployee(emp);
 	}
 	
-	
+	@Secured("ROLE_ADMIN")
 	@GetMapping("/employees")
     public List<Employee> getAllEmployees() {
         return employeeService.findAll();

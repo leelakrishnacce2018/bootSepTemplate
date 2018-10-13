@@ -65,7 +65,7 @@ public class CustomUserDetails extends Employee implements UserDetails {
 	@Override
 	public String getPassword() {
 		// TODO Auto-generated method stub
-		return null;
+		return super.getPassword();
 	}
 
 
