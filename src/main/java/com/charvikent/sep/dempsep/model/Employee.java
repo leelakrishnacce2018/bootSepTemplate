@@ -23,6 +23,8 @@ public class Employee {
 	
 	private String password;
 	
+	private String designationId;
+	
 	public Employee()
 	{
 		
@@ -92,13 +94,24 @@ public class Employee {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	
+
+	public String getDesignationId() {
+		return designationId;
+	}
+
+	public void setDesignationId(String designationId) {
+		this.designationId = designationId;
+	}
 
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName + ", LastName=" + LastName + ", age=" + age
-				+ ", userName=" + userName + ", password=" + password + "]";
+				+ ", userName=" + userName + ", password=" + password + ", designationId=" + designationId + "]";
 	}
 
+	
 
 	
 	

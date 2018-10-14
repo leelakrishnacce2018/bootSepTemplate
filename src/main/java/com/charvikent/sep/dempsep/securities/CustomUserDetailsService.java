@@ -36,10 +36,12 @@ public class CustomUserDetailsService implements UserDetailsService{
 		}else{
 			List<String> userRoles=userRolesRepository.findRoleByUserName(username);
 			
+			System.out.println(userRoles);
+			
 			List<String> list =new ArrayList<>();
 			list.add("ROLE_ADMIN");
 			
-			return new CustomUserDetails(user,list);
+			return new CustomUserDetails(user,userRoles);
 		}
 		
 	}
