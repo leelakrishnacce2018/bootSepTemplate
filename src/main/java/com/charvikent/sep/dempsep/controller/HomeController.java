@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.charvikent.sep.dempsep.exceptions.ResourceNotFoundException;
@@ -31,21 +32,17 @@ public class HomeController {
 	
 	
 	
-	
-	@PostMapping("/employees")
 	@Secured("ROLE_ADMIN")
-	public Employee saveEmploye()
+	@PostMapping(value ="/employees", produces = "application/json")
+	public Employee saveEmploye(@RequestBody Employee emp)
 	{
-		Employee emp =new Employee();
-		emp.setFirstName("leela");
-		emp.setLastName("krishna");
-		emp.setAge("25");
+		System.out.println("enter to save employee");
 		
 		return employeeService.saveEmployee(emp);
 	}
 	
 	@Secured("ROLE_ADMIN")
-	@GetMapping("/employees")
+	@GetMapping("/employees" )
     public List<Employee> getAllEmployees() {
         return employeeService.findAll();
     }

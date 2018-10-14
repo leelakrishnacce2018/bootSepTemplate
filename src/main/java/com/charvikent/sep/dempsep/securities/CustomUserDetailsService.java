@@ -41,7 +41,7 @@ public class CustomUserDetailsService implements UserDetailsService{
 			List<String> list =new ArrayList<>();
 			list.add("ROLE_ADMIN");
 			
-			return new CustomUserDetails(user,userRoles);
+			return new CustomUserDetails(user,list);
 		}
 		
 	}

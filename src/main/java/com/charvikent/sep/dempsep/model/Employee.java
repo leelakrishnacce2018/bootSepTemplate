@@ -15,7 +15,7 @@ public class Employee {
 	
 	private String firstName;
 	
-	private String LastName;
+	private String lastName;
 	
 	private String age;
 	
@@ -33,7 +33,7 @@ public class Employee {
 	public Employee(Employee user) {
 		this.id = user.id;
 		this.firstName = user.firstName;
-		this.LastName = user.LastName;
+		this.lastName = user.lastName;
 		this.age = user.age;
 		this.userName = user.userName;
 		this.password =user.password;
@@ -56,15 +56,17 @@ public class Employee {
 		this.firstName = firstName;
 	}
 
+	
+	
+	
+
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.lastName = lastName;
 	}
-	
-	
 
 	public String getAge() {
 		return age;
@@ -107,7 +109,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", LastName=" + LastName + ", age=" + age
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age
 				+ ", userName=" + userName + ", password=" + password + ", designationId=" + designationId + "]";
 	}
 
